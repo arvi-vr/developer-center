@@ -32,10 +32,7 @@ const include = [
 
   /*--- HTML ---*/
 
-  /* Tabs */
-  {% for tab in site.tabs %}
-    '{{ tab.url }}',
-  {% endfor %}
+
   
   /*--- Icons ---*/
 
