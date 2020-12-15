@@ -8,27 +8,34 @@ menu: child
 To avoid unwanted firewall initiation, ARVI platform creates firewall rules for the following port range during its installation: **1770, 7777-7780**. We advise developers to choose a network port for this game from this specific range.  
 Please also note that ARVI platform uses a number of ports for its own purposes, and the game should not be using them. The following ports should not be used: **3580, 3581, 3585, 3587, 5586, 11000-11020, 11022, 22022**.  
 
-# File description
-Integration for Unreal Engine comes in the form of a plugin engine. It is available in two options:
+# SDK installation and setup
+This Integration SDK requires **Unreal Engine 4.22** or newer. It comes in the form of a plugin and available in few options:
 * Source code plugin
+* Compiled plugin for Unreal Engine 4.22
 * Compiled plugin for Unreal Engine 4.25
 
-<img src="{{ '/assets/img/unreal-integration-plugin-files.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+All these options are available in [DOWNLOADS]({{ '/tabs/downloads-unreal/' | relative_url }}) section.
 
-# Installation into project directory
-1. Go to the directory that contains **[ProjectName].uproject**
-2. Create **Plugins** directory, if it is missing
-3. Copy the contents of one of the archives into **Plugins** directory.
+## Installation from sources
+If you decide to install the plugin from sources, then follow next steps:
+1. Download sources from GitHub
+    * Go to https://github.com/arvi-vr/unreal-integration
+    * Click the "Code" button and select "Download Zip"
 
-You should have the following structure:
+2. In your project's root directory, create a new folder if it doesn't exist: **Plugins**.
 
-<img src="{{ '/assets/img/unreal-integration-directory-structure.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+3. Unzip the downloaded file directly to the **Plugins** folder. There should now be a folder called unreal-integration-master; you can rename this if you'd like.
 
-If a source code plugin or any engine version other than 4.25 was used, the project startup will pop up a dialog window prompting you to rebuild the plugin modules.
+4. Finally, double-click the *.uproject file at the root of your project to compile and open the project. If you are prompted to rebuild any files select yes.
 
-<img src="{{ '/assets/img/unreal-integration-rebuild-warning.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+## Compiled plugin installation
+If you decide to install the compiled plugin, then follow the next steps:
+1. Download compiled plugin of appropriate version from [DOWNLOADS]({{ '/tabs/downloads-unreal/' | relative_url }}) section.
 
-Please note that this requires a pre-installed and configured development environment (Visual Studio, etc.).  
+2. In your project's root directory, create a new folder if it doesn't exist: **Plugins**.
+
+3. Unzip the downloaded file directly to the **Plugins** folder.
+
 Go to **Edits 🡒 Plugins** to check that the plugin is installed and set up correctly.
 
 <p align="center">

@@ -9,7 +9,7 @@ To avoid unwanted firewall initiation, ARVI platform creates firewall rules for 
 Please also note that ARVI platform uses a number of ports for its own purposes, and the game should not be using them. The following ports should not be used: **3580, 3581, 3585, 3587, 5586, 11000-11020, 11022, 22022**.  
 
 # SDK installation and setup
-In Unity, select **Assets 🡒 Import Package 🡒 Custom Package**. Select the SDK package file and import it into Unity.
+This Integration SDK requires **Unity 2017.4 or newer**. Go to [DOWNLOADS]({{ '/tabs/downloads-unity/' | relative_url }}) section and download unity package. In Unity select **Assets 🡒 Import Package 🡒 Custom Package**. Select the SDK package file and import it into Unity.
 
 <img src="{{ '/assets/img/unity-integration-import-package.png' | relative_url }}" class="img-fluid mx-auto d-block" />
 
