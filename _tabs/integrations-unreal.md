@@ -19,7 +19,7 @@ All these options are available in [DOWNLOADS]({{ '/tabs/downloads-unreal/' | re
 ## Installation from sources
 If you decide to install the plugin from sources, then follow next steps:
 1. Download sources from GitHub
-    * Go to https://github.com/arvi-vr/unreal-integration
+    * Go to [https://github.com/arvi-vr/unreal-integration](https://github.com/arvi-vr/unreal-integration)
     * Click the "Code" button and select "Download Zip"
 
 2. In your project's root directory, create a new folder if it doesn't exist: **Plugins**.
