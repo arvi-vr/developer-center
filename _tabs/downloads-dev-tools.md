@@ -10,14 +10,16 @@ Utility for uploading new game versions to ARVI platform. Uploading procedure is
 
 ## Features
 - First public version
-- UI improvements
 
 <hr>
-<button onclick="window.open('https://www.google.com/')" type="button" class="btn btn-dark btn-lg">Download</button>
+<button onclick="window.open('https://vrp.arvilab.com/storage/applications/3/4b3e2797-34c6-45a7-84a7-11dc0e4f6bc4/versions/aaaa52a2-67ad-4ddd-aed9-850fcfb6433d/files/5fda0ba464db7/BuildUploader.zip')" type="button" class="btn btn-dark btn-lg">Download</button>
 
 # API Tester 1.1 (December 12, 2020)
 
 Utility for testing SDK integration. For more information see [TESTING]({{ '/tabs/testing/' | relative_url }}) section.
+
+## Features
+- UI improvements
 
 ## Bug Fixes
 - Fixed window caption drawing for DPI aware
