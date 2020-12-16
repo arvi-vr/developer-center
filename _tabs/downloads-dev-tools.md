@@ -4,7 +4,7 @@ order: 12
 menu: child
 ---
 
-# Build Uploader 1.0 (December 3, 2020)
+# Build Uploader 1.0 (December 16, 2020)
 
 Utility for uploading new game versions to ARVI platform. Uploading procedure is described in [Adding the game]({{ '/tabs/getting-started-adding-the-game/#creating-a-new-game-version-and-uploading-files' | relative_url }}) section.
 
@@ -14,7 +14,7 @@ Utility for uploading new game versions to ARVI platform. Uploading procedure is
 <hr>
 <button onclick="window.open('https://vrp.arvilab.com/storage/applications/3/4b3e2797-34c6-45a7-84a7-11dc0e4f6bc4/versions/aaaa52a2-67ad-4ddd-aed9-850fcfb6433d/files/5fda0ba464db7/BuildUploader.zip')" type="button" class="btn btn-dark btn-lg">Download</button>
 
-# API Tester 1.1 (December 12, 2020)
+# API Tester 1.1 (December 16, 2020)
 
 Utility for testing SDK integration. For more information see [TESTING]({{ '/tabs/testing/' | relative_url }}) section.
 
