@@ -5,7 +5,7 @@ index: true
 
 <p align="center"><img id="logo" src="{{ '/assets/img/arvi.svg' | relative_url }}" style="max-width: 300px" /></p>  
 
-# Welcome to ARVI Integration Guide!
+# Welcome to ARVI VR Integration Guide!
 This guide serves as a starting point for adding and integrating your games with ARVI VR. It provides all the necessary documentation, plugins and code examples for integrating games.
 
 # How to use this guide?
