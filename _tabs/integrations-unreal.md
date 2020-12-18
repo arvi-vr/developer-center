@@ -102,6 +102,8 @@ Or use Blueprint:
 
 <img src="{{ '/assets/img/bp-entitlement.png' | relative_url }}" class="img-fluid mx-auto d-block" />
 
+**AppKey** is a [Game Key]({{ '/tabs/getting-started-adding-the-game/#game-key' | relative_url }}), you can get this key in the game info section of your developer account on our website.
+
 If the check fails, **game must shut down**.
 
 ## Platform request handling

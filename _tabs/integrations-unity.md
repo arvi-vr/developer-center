@@ -16,7 +16,7 @@ This Integration SDK requires **Unity 2017.4 or newer**. Go to [DOWNLOADS]({{ '/
 > **Note**: When you install new SDK versions, close Unity, delete the ARVI\SDK folder, and repeat the installation process.
 
 <a name="specifying-app-key"></a>
-After SDK is imported into Unity, a new ARVI menu will appear. Select **ARVI 🡒 Integration 🡒 Settings**. Please specify the game key in the **Application Key** field. You can get this key in the game info section of your developer account on our website.
+After SDK is imported into Unity, a new ARVI menu will appear. Select **ARVI 🡒 Integration 🡒 Settings**. Please specify the [Game Key]({{ '/tabs/getting-started-adding-the-game/#game-key' | relative_url }}) in the **Application Key** field. You can get this key in the game info section of your developer account on our website.
 
 <img src="{{ '/assets/img/unity-integration-appkey.png' | relative_url }}" class="img-fluid mx-auto d-block" />
 

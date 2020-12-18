@@ -30,7 +30,7 @@ You must fill the game fields:
 | **`Priority`** | Will be used in a future version of the platform. Default value: `100`. |
 | **`Download Attempts`** | Will be used in a future version of the platform. Default value: `3`. |
 | **`Can Use Low Space`** | Will be used in a future version of the platform. Default value: `OFF`. |
-| **`Key`** | Game key. It is generated automatically for each game and is used by the developer when integrating the ARVI SDK. |
+| **`Key`** <a name="game-key"></a> | Game key. It is generated automatically for each game and is used by the developer when integrating the ARVI SDK. |
 
 For example, this is how these settings look for one of our games -- Archer.
 
