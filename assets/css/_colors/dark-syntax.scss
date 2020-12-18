@@ -11,19 +11,19 @@
   --highlight-bg-color: var(--body-bg);
   --highlighter-rouge-color: #ce9178;
   --highlight-lineno-color: #6c6c6d;
-  --highlight-lineno-border-color: #3c4042;
+  --highlight-lineno-border-color: #303435;
   --inline-code-bg: #212529;
 
   .highlight {
     .gp { color: #818c96; }
   }
 
-  pre { color: #818c96; } /* override Bootstrap */
+  pre { color: #bfbfbf; } /* override Bootstrap */
   kbd { background-color: black; }
 
   /* syntax highlight colors from https://raw.githubusercontent.com/jwarby/pygments-css/master/monokai.css */
-  .highlight pre { background-color: var(--body-bg); }
-  .highlight .hll { background-color: #1E1E1E; }
+  .highlight pre { background-color: var(--highlight-bg-color); }
+  .highlight .hll { background-color: var(--highlight-bg-color); }
   .highlight .c { color: #608B4E; } /* Comment */
   .highlight .err { color: #D16969; background-color: #1e0010; } /* Error */
   .highlight .k { color: #569CD6; font-weight: 300; } /* Keyword */  

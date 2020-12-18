@@ -11,14 +11,14 @@ Please also note that ARVI platform uses a number of ports for its own purposes,
 # SDK installation and setup
 This Integration SDK requires **Unity 2017.4 or newer**. Go to [DOWNLOADS]({{ '/tabs/downloads-unity/' | relative_url }}) section and download unity package. In Unity select **Assets 🡒 Import Package 🡒 Custom Package**. Select the SDK package file and import it into Unity.
 
-<img src="{{ '/assets/img/unity-integration-import-package.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/unity-integration-import-package.png' | relative_url }}" class="img-fluid" />
 
 > **Note**: When you install new SDK versions, close Unity, delete the ARVI\SDK folder, and repeat the installation process.
 
 <a name="specifying-app-key"></a>
 After SDK is imported into Unity, a new ARVI menu will appear. Select **ARVI 🡒 Integration 🡒 Settings**. Please specify the [Game Key]({{ '/tabs/getting-started-adding-the-game/#game-key' | relative_url }}) in the **Application Key** field. You can get this key in the game info section of your developer account on our website.
 
-<img src="{{ '/assets/img/unity-integration-appkey.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/unity-integration-appkey.png' | relative_url }}" class="img-fluid" />
 
 # Platform integration
 All features required for integration are in the `Integration` class. A detailed description of its methods follows. The folder **ARVI/SDK/Examples** contains the most common integration usage examples.

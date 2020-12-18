@@ -6,13 +6,13 @@ menu: child
 
 To manage games and their versions, you should switch to **Development Mode**. In the upper left corner of the page in your personal account, from the ARVI VR drop-down menu, select **Development**.
 
-<img src="{{ '/assets/img/development-mode.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/development-mode.png' | relative_url }}" class="img-fluid" />
 
 <a name="creating-game-description"></a>
 # Creating game description
 Go to the [**Games**](https://vrp.arvilab.com/development/games) section -- this is a list of your games. From here you can manage everything related to the game -- add / change a description, manage game versions, distribute it across locations, etc. To create a new game, click **New** at the top right of the page.
 
-<a href="{{ '/assets/img/game-new.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-new.png' | relative_url }}" class="img-fluid mx-auto d-block" style="max-width:700px;width:100%;" /></a>
+<a href="{{ '/assets/img/game-new.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-new.png' | relative_url }}" class="img-fluid" style="max-width:700px;width:100%;" /></a>
 
 You must fill the game fields:
 
@@ -34,19 +34,19 @@ You must fill the game fields:
 
 For example, this is how these settings look for one of our games -- Archer.
 
-<img src="{{ '/assets/img/game-info.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/game-info.png' | relative_url }}" class="img-fluid" />
 
 <a name="game-promo-materials"></a>
 # Adding promotional materials
 Promotional materials allow location owners to use your game posters, logos, descriptions, etc. on their websites. These materials will be used to advertise the game and display information on gaming locations.  
 To upload promotional materials, go to the [**Games**](https://vrp.arvilab.com/development/games) section and select **Materials** from the game menu.
 
-<a href="{{ '/assets/img/game-materials.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-materials.png' | relative_url }}" class="img-fluid mx-auto d-block" style="max-width:700px;width:100%;" /></a>
+<a href="{{ '/assets/img/game-materials.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-materials.png' | relative_url }}" class="img-fluid" style="max-width:700px;width:100%;" /></a>
 
 ## Description
 On the **Description** tab fill in the localized detailed game descriptions for each language. Among other things, it will also used for social media, press release, etc.
 
-<img src="{{ '/assets/img/materials-description.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/materials-description.png' | relative_url }}" class="img-fluid" />
 
 ## Promo materials
 On the **Promo materials** tab add graphic materials: game promo art (vertical), screenshots (horizontal), logo (with transparency), poster, etc. It is recommended to name the files sequentially. For example screenshot1.png, screenshot2.png, etc. Below are the recommended sizes for promo materials:
@@ -60,18 +60,19 @@ On the **Promo materials** tab add graphic materials: game promo art (vertical),
 | `POSTER` | A1 (84.1х59.4 сm / 33.1x23.4 ") |
 | `WALLSIZE BANNERS` | 6x2.5 m / 19.69x8.2 ft |
 
-<img src="{{ '/assets/img/materials-promo-art.png' | relative_url }}" class="img-fluid mx-auto d-block" />
-<img src="{{ '/assets/img/materials-screenshots.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/materials-promo-art.png' | relative_url }}" class="img-fluid" />
+
+<img src="{{ '/assets/img/materials-screenshots.png' | relative_url }}" class="img-fluid" />
 
 ## Source materials
 On the **Source materials** tab add the zip archives with the source files of the graphic materials (`PSD` files with layers), if any. This will help the location owners add their logos to the graphic materials or adjust your materials for their needs.
 
-<img src="{{ '/assets/img/materials-source-materials.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/materials-source-materials.png' | relative_url }}" class="img-fluid" />
 
 ## Video materials
 On the **Video materials** tab you can add game trailers (about a minute in length) and short gameplay videos. You need to provide a link to the video on youtube and download the original video file in `MP4` format.
 
-<img src="{{ '/assets/img/materials-video.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/materials-video.png' | relative_url }}" class="img-fluid" />
 
 ## Photo booth materials
 This section is temporarily not used.
@@ -82,7 +83,7 @@ The manifest allows the platform to find out what capabilities a specific versio
 For example, in the new version of the game you added support for the new localization, but previous versions do not support it. Or you decided to add new in-game commands to the game, which did not exist before. In this case, you will create a new, updated manifest for this version. Thus, a game can have multiple manifests, each describing a specific version or multiple versions.
 Manifests for games are stored in the [**Manifests**](https://vrp.arvilab.com/development/manifests) section -- there you can view and change existing manifests and create new ones by clicking the **New** button.
 
-<a href="{{ '/assets/img/manifest-new.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/manifest-new.png' | relative_url }}" class="img-fluid mx-auto d-block" style="max-width:700px;width:100%;" /></a>
+<a href="{{ '/assets/img/manifest-new.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/manifest-new.png' | relative_url }}" class="img-fluid" style="max-width:700px;width:100%;" /></a>
 
 You must fill the manifest fields:
 
@@ -143,29 +144,29 @@ In this case, if the operator creates a game session for two in English with a t
 
 You can also create a manifest based on an existing one. For example, you added support for a new language, a new in-game command, or changed the launch parameters of the game. In order not to fill in all the fields again, you can duplicate the existing manifest and change the necessary settings. To do this, in the manifest menu, select **Duplicate** -- a copy of the manifest will be created, it remains to give it a new name.
 
-<img src="{{ '/assets/img/manifest-duplicate.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/manifest-duplicate.png' | relative_url }}" class="img-fluid" />
 
 <a name="manifest-localizations"></a>
 ## Setting up localizations
 In the manifest, you can indicate which languages the game supports. This list will be displayed in the admin panel, allowing the operator to select the game session language before launching. The selected language can then be passed to the game as a command line parameter in the [*`Server / Client / Single Player Options`*](#manifest-server-options) fields.
 To configure localizations, select the appropriate manifest from the [**Manifests**](https://vrp.arvilab.com/development/manifests) section and select **Languages** from its menu. On the page with a list of languages, check the ones that the game supports.
 
-<img src="{{ '/assets/img/manifest-languages.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/manifest-languages.png' | relative_url }}" class="img-fluid" />
 
 <a name="manifest-ingame-commands"></a>
 ## In-game commands
 In-game commands are commands that the game provides to control the gameplay from the outside. These commands are displayed in the operator's admin panel and enable him to control the game remotely. For example, using such commands, the operator can add game time, skip a puzzle, load a certain level, etc. The game developer himself decides what commands he is ready to provide for management, and he himself implements this in the game.  
 To create or edit the list of in-game commands, go to the [**Manifests**](https://vrp.arvilab.com/development/manifests) section, select a manifest and select **In-Game Commands** from its menu.
 
-<img src="{{ '/assets/img/manifest-commands.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/manifest-commands.png' | relative_url }}" class="img-fluid" />
 
 In-game commands have a nested structure and looks like a menu. **Root commands** are at the root of the list and do not contain nested commands. **Folders** are also located at the root of the list and contain **nested commands**. The folders themselves are not commands and are only used to group the commands nested within them.
 
-<a href="{{ '/assets/img/game-commands.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-commands.png' | relative_url }}" class="img-fluid mx-auto d-block" style="max-width:700px;width:100%;" /></a>
+<a href="{{ '/assets/img/game-commands.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-commands.png' | relative_url }}" class="img-fluid" style="max-width:700px;width:100%;" /></a>
 
 To add a **root command** or **folder** press **New root command** or **New folder** respectively.
 
-<a href="{{ '/assets/img/game-commands-new.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-commands-new.png' | relative_url }}" class="img-fluid mx-auto d-block" style="max-width:700px;width:100%;" /></a>
+<a href="{{ '/assets/img/game-commands-new.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-commands-new.png' | relative_url }}" class="img-fluid" style="max-width:700px;width:100%;" /></a>
 
 Complete the following fields :
 
@@ -187,27 +188,27 @@ Commands and folders for which the *`Activation Message`* field is **not specifi
 # Creating a new game version and uploading files
 After creating the game description and manifest, you need to create the first game version. You will also need to create new versions in case you want to update the game. To do this, use the [Build Uploader]({{ '/tabs/downloads-dev-tools/' | relative_url }}) utility. After its launch and authorization, select the **Upload** mode.
 
-<a href="{{ '/assets/img/build-uploader-upload.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/build-uploader-upload.png' | relative_url }}" class="img-fluid mx-auto d-block" style="max-width:500px;width:100%;" /></a>
+<a href="{{ '/assets/img/build-uploader-upload.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/build-uploader-upload.png' | relative_url }}" class="img-fluid" style="max-width:500px;width:100%;" /></a>
 
 Fill all the required version fields and click **Upload**. Your game will be automatically packed into an archive, split into parts and uploaded to our website.
 
-<a href="{{ '/assets/img/build-uploader.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/build-uploader.png' | relative_url }}" class="img-fluid mx-auto d-block" style="max-width:500px;width:100%;" /></a>
+<a href="{{ '/assets/img/build-uploader.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/build-uploader.png' | relative_url }}" class="img-fluid" style="max-width:500px;width:100%;" /></a>
 
 <a name="game-activation"></a>
 # Game activation
 When your game is ready for release, you need to activate it. To do this, go to the [**Games**](https://vrp.arvilab.com/development/games) section and select **Edit** in the game menu and change the [**`Status`**](#game-status-field) field to `Active`.
 
-<a href="{{ '/assets/img/game-edit.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-edit.png' | relative_url }}" class="img-fluid mx-auto d-block" style="max-width:700px;width:100%;" /></a>
+<a href="{{ '/assets/img/game-edit.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-edit.png' | relative_url }}" class="img-fluid" style="max-width:700px;width:100%;" /></a>
 
-<img src="{{ '/assets/img/game-activate.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/game-activate.png' | relative_url }}" class="img-fluid" />
 
 <a name="game-distribution"></a>
 # Distribution by locations
 Now you can distribute your game versions between locations. For example, you can distribute a stable version to one of the locations, and a test version to another location. To do this, go to the [**Games**](https://vrp.arvilab.com/development/games) section and select **Distribute** from the game menu.
 
-<a href="{{ '/assets/img/game-distribute.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-distribute.png' | relative_url }}" class="img-fluid mx-auto d-block" style="max-width:700px;width:100%;" /></a>
+<a href="{{ '/assets/img/game-distribute.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-distribute.png' | relative_url }}" class="img-fluid" style="max-width:700px;width:100%;" /></a>
 
-<a href="{{ '/assets/img/game-distribution.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-distribution.png' | relative_url }}" class="img-fluid mx-auto d-block" style="max-width:700px;width:100%;" /></a>
+<a href="{{ '/assets/img/game-distribution.png' | relative_url }}" data-toggle="lightbox"><img src="{{ '/assets/img/game-distribution.png' | relative_url }}" class="img-fluid" style="max-width:700px;width:100%;" /></a>
 
 In the **Builds** list, select the version you want to distribute.  
 If you want to add this version to a specific location, in the list of **Available Locations**, click **Add** next to the one to which you want to distribute the game. Now, when the games are updated at this location, your game will be added there or updated to the selected version.  

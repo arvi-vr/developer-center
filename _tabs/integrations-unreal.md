@@ -69,7 +69,7 @@ void AExampleActor::BeginPlay()
 The class is described in `ARVIIntegrationSubSystem.h`. Class methods duplicate the names of communication methods. All methods receive the required parameters and two asynchronous operations completion handlers, and the returned value indicates whether the operation was queued for handling.  
 You may also use Blueprint:
 
-<img src="{{ '/assets/img/bp-initialization.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-initialization.png' | relative_url }}" class="img-fluid" />
 
 <a name="integration-isapplicationentitled"></a>
 ## Verification
@@ -100,7 +100,7 @@ Run the following code to execute the check:
 ```
 Or use Blueprint:
 
-<img src="{{ '/assets/img/bp-entitlement.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-entitlement.png' | relative_url }}" class="img-fluid" />
 
 **AppKey** is a [Game Key]({{ '/tabs/getting-started-adding-the-game/#game-key' | relative_url }}), you can get this key in the game info section of your developer account on our website.
 
@@ -131,9 +131,9 @@ bool AExampleActor::HandlerTimeLeft(int& TimeLeftInSeconds)
 }
 ```
 
-<img src="{{ '/assets/img/bp-time-left-1.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-time-left-1.png' | relative_url }}" class="img-fluid" />
 
-<img src="{{ '/assets/img/bp-time-left-2.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-time-left-2.png' | relative_url }}" class="img-fluid" />
 
 <a name="integration-player-position-request"></a>
 Handling example **Player Position Request**:
@@ -160,9 +160,9 @@ void AExampleActor::BeginPlay()
 }
 ```
 
-<img src="{{ '/assets/img/bp-player-position-1.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-player-position-1.png' | relative_url }}" class="img-fluid" />
 
-<img src="{{ '/assets/img/bp-player-position-2.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-player-position-2.png' | relative_url }}" class="img-fluid" />
 
 ## Handling of game commands
 In addition to the above-mentioned standard requests, the platform may send in-game commands that you can create in the developer's account on our website. They will be sent into the game from our control panel by the operator.
@@ -198,9 +198,9 @@ bool AExampleActor::HandlerPlatformMessages(const FARVIPlatformMessage& Message,
 }
 ```
 
-<img src="{{ '/assets/img/bp-platform-messages-1.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-platform-messages-1.png' | relative_url }}" class="img-fluid" />
 
-<img src="{{ '/assets/img/bp-platform-messages-2.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-platform-messages-2.png' | relative_url }}" class="img-fluid" />
 
 ## Sending messages to the platform
 ### Game server start message
@@ -228,7 +228,7 @@ void AExampleActor::HandlerServerStartedFailed(int ErrorCode, FString ErrorMessa
 }
 ```
 
-<img src="{{ '/assets/img/bp-server-started.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-server-started.png' | relative_url }}" class="img-fluid" />
 
 ### Game completed notification
 The game must also notify the platform of its completion. Use the `GameCompleted()` method for this. We recommend call it just before closing the game, and close the game in its `HandlerGameCompletedSuccessed` handler.
@@ -256,7 +256,7 @@ void AExampleActor::HandlerGameCompletedFailed(int ErrorCode, FString ErrorMessa
 }
 ```
 
-<img src="{{ '/assets/img/bp-game-completed.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-game-completed.png' | relative_url }}" class="img-fluid" />
 
 ### Operator call
 Sometimes a player may require the operator's assistance. You can call the `CallOperator()` method, which will trigger a message on the operator's control panel indicating that the player needs help.
@@ -283,7 +283,7 @@ void AExampleActor::HandlerCallOperatorFailed(int ErrorCode, FString ErrorMessag
 }
 ```
 
-<img src="{{ '/assets/img/bp-call-operator.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-call-operator.png' | relative_url }}" class="img-fluid" />
 
 ### Audio chat channel selection
 By default, all players in the game are on a common audio chat and can hear one another. However, multi-player games that support multiple teams might require team-based separation of audio streams. For example, players in the same team have to hear one another only, and not any other teams. For this purpose, the game may ask the platform to assign a relevant audio chat channel to the user that will correspond to the player's team number. This can be done using the `SetAudioChatChannel(channel)` method, where **channel** is the channel number. Channels 1...10 and Public are supported.
@@ -310,7 +310,7 @@ void AExampleActor::HandlerSetAudioChatChannelFailed(int ErrorCode, FString Erro
 }
 ```
 
-<img src="{{ '/assets/img/bp-audiochat-channel.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-audiochat-channel.png' | relative_url }}" class="img-fluid" />
 
 ### Activating and deactivating in-game commands
 You can control the display of in-game commands in the admin panel at a specific point in time. For example, the game provides an in-game command to restart the level, but you want to display it in the operator panel only after the level has started. Or you want to hide the puzzle solving command when it has already been solved.  
@@ -338,7 +338,7 @@ void AExampleActor::BeginPlay()
 }
 ```
 
-<img src="{{ '/assets/img/bp-activate-command.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-activate-command.png' | relative_url }}" class="img-fluid" />
 
 ```c++
 void AExampleActor::HandlerDeactivateInGameCommandSuccessed()
@@ -363,7 +363,7 @@ void AExampleActor::BeginPlay()
 }
 ```
 
-<img src="{{ '/assets/img/bp-deactivate-command.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-deactivate-command.png' | relative_url }}" class="img-fluid" />
 
 ### Sending messages
 If you need to report any event in the game (such as a puzzle solved), you can send a text message to the platform. It will be saved in game logs and will be available for display in the game session information on the website. Use the `SendGameMessage(message, messageGroup)` method to forward your message. As an optional second parameter, you can specify the group (designated using any word of your choosing), and all messages referencing this group will be grouped when displayed. Examples:
@@ -390,7 +390,7 @@ void AExampleActor::HandlerSendGameMessageFailed(int ErrorCode, FString ErrorMes
 }
 ```
 
-<img src="{{ '/assets/img/bp-game-message.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-game-message.png' | relative_url }}" class="img-fluid" />
 
 
 You can also send a message that will set the timescale to a specific color when it is displayed on it. For example, you want to see (as a color on the timescale) how long it took the player to complete a certain action. Call the `SendTrackingMessage(message)` method and specify the relevant marker as the message.
@@ -417,7 +417,7 @@ void AExampleActor::HandlerSendTrackingMessageFailed(int ErrorCode, FString Erro
 }
 ```
 
-<img src="{{ '/assets/img/bp-tracking-message.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-tracking-message.png' | relative_url }}" class="img-fluid" />
 
 Sometimes you might need to send a technical message without cluttering the game session log. For example, you want to log an error message, or send the error code, module and method that initiated it, etc. For these purposes, we recommend using the `SendLogMessage(message)` method. It will save your message in a separate "technical" log only without affecting the game log. Example:
 ```c++
@@ -443,7 +443,7 @@ void AExampleActor::HandlerSendLogMessageFailed(int ErrorCode, FString ErrorMess
 }
 ```
 
-<img src="{{ '/assets/img/bp-log-message.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-log-message.png' | relative_url }}" class="img-fluid" />
 
 ## Advanced settings
 ### Cord twist tracking
@@ -468,7 +468,7 @@ void AExampleActor::BeginPlay()
 }
 ```
 
-<img src="{{ '/assets/img/bp-cord-twisting.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-cord-twisting.png' | relative_url }}" class="img-fluid" />
 
 ### Trial Mode
 When starting the game from the control panel, the operator in some cases may indicate that the game should be launched in Trial Mode. Typically, this launch mode is used for testing or demonstration purposes and is not intended for commercial use.
@@ -492,7 +492,7 @@ void AExampleActor::BeginPlay()
 }
 ```
 
-<img src="{{ '/assets/img/bp-is-trial-mode.png' | relative_url }}" class="img-fluid mx-auto d-block" />
+<img src="{{ '/assets/img/bp-is-trial-mode.png' | relative_url }}" class="img-fluid" />
 
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
   new Crate({
