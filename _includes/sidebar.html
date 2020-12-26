@@ -23,7 +23,7 @@
 
 	<ul class="sidebar-menu">
 		<!-- Introduction -->
-		<li class="sidebar-menu-item justify-content-center {% if page.index %}active{% endif %}">
+		<li class="sidebar-menu-item justify-content-center{% if page.index %}{{ " active" }}{% endif %}">
 			<a href="{{ '/' | relative_url }}" class="nav-link justify-content-center align-items-center w-100">
 				<i class="fa-fw fas fa-home ml-xl-3 mr-xl-3"></i>
 				<span>INTRODUCTION</span>
@@ -38,7 +38,7 @@
 				</ul>
 			</li>
 				{% endif %}
-			<li id="{{ tab.url }}" class="sidebar-menu-item justify-content-center {% if tab.url == page.url %}active{% endif %}">
+			<li id="{{ tab.url }}" class="sidebar-menu-item justify-content-center{% if tab.url == page.url %}{{ " active"}}{% endif %}">
 				<a href="#" class="nav-link justify-content-center align-items-center w-100">
 					<i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3"></i>
 					<span>{{ tab.title | upcase }}</span>
@@ -55,7 +55,7 @@
 				</ul>
 			</li>
 				{% endif %}
-			<li class="sidebar-menu-item justify-content-center {% if tab.url == page.url %}active{% endif %}">
+			<li class="sidebar-menu-item justify-content-center{% if tab.url == page.url %}{{ " active"}}{% endif %}">
 				<a href="{{ tab.url | relative_url }}" class="nav-link justify-content-center align-items-center w-100">
 					<i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3"></i>
 					<span>{{ tab.title | upcase }}</span>
@@ -72,35 +72,6 @@
 			</li>
 		{% endif %}
 	</ul>
-
-<!--
-  <ul class="nav flex-column">
-  
-    <li class="nav-item d-flex justify-content-center {% if page.index %}active{% endif %}">
-      <a href="{{ '/' | relative_url }}" class="nav-link d-flex justify-content-center align-items-center w-100">
-        <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
-        <span>GETTING STARTED</span>
-      </a>
-    </li>
-
-    {% assign sorted_tabs = site.tabs | sort:'order' %}
-    {% for tab in sorted_tabs %}
-    <li class="nav-item d-flex justify-content-center {% if tab.url == page.url %}active{% endif %}">
-      {% if tab.menu == 'child' %}
-      <a href="{{ tab.url | relative_url }}" class="menu-child nav-link d-flex justify-content-center align-items-center w-100">
-        <span>{{ tab.title | upcase }}</span>
-      </a>
-      {% else %}
-      <a href="{{ tab.url | relative_url }}" class="nav-link d-flex justify-content-center align-items-center w-100">
-        <i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded"></i>
-        <span>{{ tab.title | upcase }}</span>
-      </a>
-      {% endif %}
-    </li>
-    {% endfor %}
-
-  </ul>
--->
 
 </div><!-- #nav-wrapper -->
 

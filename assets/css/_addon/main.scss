@@ -904,6 +904,9 @@ img {
       @include img;
       @include img-caption;
     }
+    > img[data-src]:not(.normal):not(.left):not(.right) {
+      @include align-center;
+    }
   }
 
   > p {
