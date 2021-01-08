@@ -2,4 +2,9 @@
 layout: post
 ---
 
-{{ content }}
+{% for tab in site.tabs %}
+	{% if tab.index %}
+		{{ tab.content }}
+		{% break %}
+	{% endif %}
+{% endfor %}

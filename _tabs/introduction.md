@@ -1,6 +1,6 @@
 ---
-layout: home
 index: true
+order: 0
 ---
 
 <img src="{{ '/assets/img/arvi.svg' | relative_url }}" id="logo" class="img-fluid" style="max-width: 300px" />
