@@ -38,10 +38,8 @@ If you decide to install the compiled plugin, then follow the next steps:
 
 Go to **Edits 🡒 Plugins** to check that the plugin is installed and set up correctly.
 
-<p align="center">
-  <img src="{{ '/assets/img/unreal-integration-plugins-menu.png' | relative_url }}" />
-  <img src="{{ '/assets/img/unreal-integration-plugins-window.png' | relative_url }}" height="150px"/>
-</p>
+<img src="{{ '/assets/img/unreal-integration-plugins-menu.png' | relative_url }}" class="img-fluid" />
+<img src="{{ '/assets/img/unreal-integration-plugins-window.png' | relative_url }}" height="150px" class="img-fluid"/>
 
 # Platform integration
 In source code, integration comes in the form of a game instance sub-system. The object is accessible via the `UGameInstance` class object.
