@@ -1,15 +1,14 @@
 -
   type: github
   icon: 'fab fa-github'
+  hint: GitHub
 -
   type: discord
   icon: 'fab fa-discord'
   url:  'https://discord.gg/DQHrdaS9pc'
--
-  type: youtube
-  icon: 'fab fa-youtube'
-  url:  'https://www.youtube.com/channel/UCgEwFthoDtNrB7G1Nrwbvew'
+  hint: Discord
 -
   type: email
   icon: 'fas fa-envelope'
   noblank: true            # open link in current tab
+  hint: E-Mail
