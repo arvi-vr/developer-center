@@ -86,9 +86,9 @@ You must fill the manifest fields:
 
 | {::nomarkdown}<div style="width:180px">{:/}Field{::nomarkdown}</div>{:/} | Description |
 | --- | --- |
-| **`Name`** | The name of the manifest. You can name it by the name of the game and version. For example: `$PROJECT_NAME Manifest v1`, where `$PROJECT_NAME` is the name of the game. Maximum `255` characters. |
+| **`Name`** | The name of the manifest. You can name it by the name of the game and version. For example: `YOUR_GAME_NAME Manifest v1`, where `YOUR_GAME_NAME` is the name of the game. Maximum `255` characters. |
 | *`Tutorial`* | If the game has a separate tutorial registered earlier, then in this drop-down list you can specify the tutorial for the game. |
-| **`Exe Path`** | The relative path to the game executable file. Indicated relative to the root folder of the game. For example, for Unity games, this is the executable file `$PROJECT_NAME.exe` located in the root of the game folder. For Unreal games, this is `$PROJECT_NAME\Binaries\Win64\$PROJECT_NAME-Win64-Shipping.exe`. |
+| **`Exe Path`** | The relative path to the game executable file. Indicated relative to the root folder of the game. For example, for Unity games, this is the executable file `YOUR_GAME_NAME.exe` located in the root of the game folder. For Unreal games, this is `YOUR_GAME_NAME\Binaries\Win64\YOUR_GAME_NAME-Win64-Shipping.exe`. |
 | **`Icon`** | Manifest icon file. |
 | *`Server Options`* <a name="manifest-server-options"></a> | Command line parameters that must be passed to a multiplayer game to start as Server (if supported by the game). The developer himself, at his discretion, forms this string as it is convenient for him, using the [variables](#variables-description) described below. |
 | *`Client Options`* | Command line parameters that must be passed to a multiplayer game to start as Client (if supported by the game). The developer himself, at his discretion, forms this string as it is convenient for him, using the [variables](#variables-description) described below. |
